@@ -30,7 +30,7 @@ const Map = ({ coords, places, setCoords, setBounds, setChildClicked, weatherDat
             className="absolute transform -translate-x-1/2 -translate-y-1/2 z-10 hover:z-20"
             {...(place.$hover ? { 'data-hover': true } : {})}
           >
-            {!isMobile ? (
+            {isMobile ? (
               <IoLocationOutline color="blue" size={30} />
             ) : (
               <div className="bg-white p-3 rounded-md shadow-lg w-24">
